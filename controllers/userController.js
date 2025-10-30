@@ -14,9 +14,9 @@ import Food from "../models/Food.js";
 const otpStore = new Map(); // temporary in-memory storage
 
 // 🔢 Generate a 6-digit random OTP
-const generateOTP = () => {
-  return Math.floor(100000 + Math.random() * 900000).toString();
-};
+// const generateOTP = () => {
+//   return Math.floor(100000 + Math.random() * 900000).toString();
+// };
 
 // 📤 Send OTP
 export const sendOTP = async (req, res) => {
