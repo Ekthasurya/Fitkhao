@@ -67,11 +67,11 @@ export const markOrderReady = async (req, res) => {
 };
 
 /** Helper function to find nearest available delivery boy */
-const findNearestDeliveryBoy = async () => {
-  // For testing, this can be a simple "find first available"
-  // In real use, you'd calculate distance based on coordinates
-  return await DeliveryBoy.findOne({ available: true });
-};
+// const findNearestDeliveryBoy = async () => {
+//   // For testing, this can be a simple "find first available"
+//   // In real use, you'd calculate distance based on coordinates
+//   return await DeliveryBoy.findOne({ available: true });
+// };
 
 export const assignDelivery = async (req, res) => {
   try {
